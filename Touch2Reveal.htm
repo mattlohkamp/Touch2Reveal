@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Touch2Reveal</title>
+		<link rel="stylesheet" type="text/css" href="Touch2Reveal.css" />
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div id="Touch2Reveal"></div>
+    <p><a href="https://visualhunt.com/photo/40765/">photo via Visualhunt</a></p>
+
+    <script src="Touch2Reveal.js"></script>
+    <script>
+      var touch2reveal;
+      window.onload = function(){
+        touch2reveal = new Touch2Reveal(document.getElementById('Touch2Reveal'),'before.gif','after.jpg',{
+
+        });
+      }
+    </script>
+  </body>
+</html>
