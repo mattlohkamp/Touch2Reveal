@@ -17,7 +17,18 @@
       var touch2reveal;
       window.onload = function(){
         touch2reveal = new Touch2Reveal(document.getElementById('Touch2Reveal'),'before.gif','after.jpg',{
-
+					brushSize:100,
+					softBrush:false,
+					revealTarget:{
+						x:40,
+						y:100,
+						width:700,
+						height:300
+					},
+					onReveal:function(e){
+						alert('image revealed!');
+						touch2reveal.reset();
+					}
         });
       }
     </script>
